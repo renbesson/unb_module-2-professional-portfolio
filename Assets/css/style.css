@@ -1,0 +1,266 @@
+:root {
+  --darkGray: rgb(43, 46, 53);
+  --lightGray: rgb(59, 78, 107);
+  --oceanBlue: rgb(135, 197, 198);
+  --mainBg: rgb(234, 234, 245);
+  --fontTrebuchet: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --fontHelvetica: Helvetica, "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* Changes the body background */
+body {
+  background-color: var(--mainBg);
+  font-family: var(--fontTrebuchet);
+}
+
+/* Formats the header */
+.nav-bar {
+  background-color: var(--darkGray);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0 15px 0;
+}
+
+/* Formats the header links to be positioned inline */
+.nav-bar h1 {
+  font-size: 48px;
+  padding: 10px 10px 10px 50px;
+  color: var(--darkGray);
+  background-color: var(--oceanBlue);
+}
+
+/* Adds padding and margin and formats the nav links  */
+nav {
+  align-self: center;
+  margin-right: 75px;
+}
+
+nav a {
+  color: var(--oceanBlue);
+  font-size: 22px;
+  margin: 4px;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+}
+
+nav a::before {
+  content: ".";
+  color: transparent;
+}
+
+nav a::after {
+  content: ".";
+  color: transparent;
+}
+
+/* Formats the hero on the main image */
+.hero {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  position: absolute;
+  right: 75px;
+  bottom: 20px;
+  font-size: 36px;
+  color: var(--darkGray);
+  background-color: var(--oceanBlue);
+  padding: 10px;
+}
+
+.hero-img {
+  position: absolute;
+  height: 100%;
+  font-size: 36px;
+  color: var(--darkGray);
+  background-color: var(--oceanBlue);
+  padding: 5px;
+}
+
+/* ############################################################################ */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  margin: 0 auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.flex-col-0 {
+  flex: 0;
+}
+
+.flex-col-1 {
+  flex: 1 0;
+}
+
+.flex-col-2 {
+  flex: 2;
+}
+
+.flex-col-3 {
+  flex: 3;
+}
+
+.flex-col-4 {
+  flex: 4;
+}
+
+.flex-col-5 {
+  flex: 5;
+}
+
+.flex-full {
+  flex-basis: 100%;
+}
+
+.bottom-margin {
+  margin-bottom: 50px;
+}
+
+.right-border {
+  border-right: 4px solid var(--lightGray);
+  padding-right: 15px;
+  margin-right: 30px;
+}
+
+.content-title {
+  font-size: 56px;
+  color: var(--lightGray);
+  text-align: end;
+}
+
+.content-text {
+  font-size: 16px;
+  color: var(--lightGray);
+  line-height: 1.5;
+}
+
+.card {
+  position: relative;
+  border: 5px solid var(--oceanBlue);
+  min-width: 400px;
+  color: var(--darkGray);
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.card-surf {
+  height: 400px;
+}
+
+.card-surf::before {
+  background-image: url("../images/project1.png");
+}
+
+.card-surf:hover::before {
+  opacity: 1;
+}
+
+.card-led {
+  height: 150px;
+}
+
+.card-led::before {
+  background-image: url("../images/project2.png");
+}
+
+.card-led:hover::before {
+  opacity: 1;
+}
+
+.card-calc {
+  height: 150px;
+}
+
+.card-calc::before {
+  background-image: url("../images/tbd.webp");
+}
+
+.card-calc:hover::before {
+  opacity: 1;
+}
+
+.card-pastel {
+  height: 150px;
+}
+
+.card-pastel::before {
+  background-image: url("../images/tbd.webp");
+}
+
+.card-pastel:hover::before {
+  opacity: 1;
+}
+
+.card-run {
+  height: 150px;
+}
+
+.card-run::before {
+  background-image: url("../images/tbd.webp");
+}
+
+.card-run:hover::before {
+  opacity: 1;
+}
+
+.card header {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  padding: 10px;
+  background-color: var(--oceanBlue);
+}
+
+.card header h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.card header p {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.footer {
+  justify-content: space-between;
+}
+
+.footer a {
+  color: var(--darkGray);
+}
+
+.center-vertically {
+  align-self: center;
+}
